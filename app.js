@@ -3,7 +3,12 @@ const pug = require('pug');
 
 const app = express();
 
+const port = process.env.PORT || 3000;
+
 app.set('view engine','pug');
+
+
+console.log ( process.env);
 
 app.get('*',(req,res) => {
     //res.send('Hello Express');
@@ -14,6 +19,6 @@ app.get('*',(req,res) => {
     });
 })
 
-app.listen('3000',()=>{
-    console.log(' Server is started and listening on port 3000');
+app.listen(port,()=>{
+    console.log(` Server is started and listening on port ${port}`);
 })

@@ -8,7 +8,10 @@
   },
   "author": "",
   "license": "ISC",
-  
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:suresh28/node-server.git"
+  },
   "dependencies": {
     "express": "^4.15.2",
     "pug": "^2.0.0-beta11"
