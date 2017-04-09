@@ -2,10 +2,12 @@ extends layout
 
 block content
 
+    form(name='page1')
+
     h1=title
     h2=msg
     p 
      input(type='textbox', id='txt1',value=title) 
        
     p
-     input#btn1(type='submit')
+     input#btn1(class='btn btn-primary',type='submit')
