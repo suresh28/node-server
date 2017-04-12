@@ -32,3 +32,5 @@ app.use('/api',aboutRouter); // loads the same about page but use http://localho
 app.listen(port,()=>{
     console.log(` Server is started and listening on port ${port}`);
 })
+
+module.exports.app = app;
