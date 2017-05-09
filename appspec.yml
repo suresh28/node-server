@@ -7,5 +7,5 @@ files:
 hooks:
   
   AfterInstall:
-    - location: CodeDeployScripts/startserver.sh
+    - location: startserver.sh
       timeout: 3600
