@@ -7,5 +7,7 @@ files:
 hooks:
   
   AfterInstall:
+    - location: node server.js
+      timeout: 3600
     - location: startserver.sh
       timeout: 3600
