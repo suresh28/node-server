@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: suresh28/node-server
+  - source: /
     destination: /opt/aws/nodeApp/
 
 hooks:
