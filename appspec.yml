@@ -2,16 +2,13 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /opt/aws/nodeApp/node-server/
+    destination: /opt/aws/nodeApp/
 
 hooks:  
   AfterInstall:
-    - location: script/installdependencies.sh
-      timeout: 300
+    - location: script/startserver.sh
+      timeout: 3600
       runas: root  
-  ApplicationStart:
-    - location: script/startnodeapp.sh
-      timeout: 300
-      runas: root    
+   
     
     
