@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /opt/aws/nodeApp/
+cd /opt/aws/nodeApp/node-server/
 node server.js
