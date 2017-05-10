@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /opt/aws/nodeApp/
+    destination: /opt/aws/nodeApp/node-server/
 
 hooks:  
   AfterInstall:
