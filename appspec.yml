@@ -8,4 +8,6 @@ hooks:
   AfterInstall:
     - location: script/startserver.sh
       timeout: 3600
-      runas:root   
+      runas: root
+    
+    
