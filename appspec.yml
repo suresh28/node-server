@@ -1,13 +1,14 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /server.js
     destination: /opt/aws/nodeApp/
 
-hooks:
-  
+hooks:  
   AfterInstall:
-    - location: node server.js
-      timeout: 3600
     - location: startserver.sh
       timeout: 3600
+      runas:root
+    - location: node server.js
+      timeout: 3600
+      runas:root
