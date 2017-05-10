@@ -9,5 +9,9 @@ hooks:
     - location: script/startserver.sh
       timeout: 3600
       runas: root
+  ApplicationStart:
+    - location: script/startnodeapp.sh
+      timeout: 300
+      runas: root    
     
     
