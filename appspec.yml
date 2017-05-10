@@ -5,7 +5,7 @@ files:
     destination: /opt/aws/nodeApp/node-server/
 
 hooks:  
-  BeforeInstall:
+  AfterInstall:
     - location: script/installdependencies.sh
       timeout: 300
       runas: root  
