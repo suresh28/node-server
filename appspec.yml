@@ -5,10 +5,10 @@ files:
     destination: /opt/aws/nodeApp/node-server/
 
 hooks:  
-  AfterInstall:
-    - location: script/startserver.sh
-      timeout: 3600
-      runas: root
+  BeforeInstall:
+    - location: script/installdependencies.sh
+      timeout: 300
+      runas: root  
   ApplicationStart:
     - location: script/startnodeapp.sh
       timeout: 300
