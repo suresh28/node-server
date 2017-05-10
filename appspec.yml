@@ -6,9 +6,6 @@ files:
 
 hooks:  
   AfterInstall:
-    - location: startserver.sh
+    - location: script/startserver.sh
       timeout: 3600
-      runas:root
-    - location: node server.js
-      timeout: 3600
-      runas:root
+      runas:root   
