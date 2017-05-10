@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd /opt/aws/nodeapp/
+cd /opt/aws/nodeApp/
 npm install
 node server.js
