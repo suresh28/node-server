@@ -7,8 +7,12 @@ files:
 hooks:  
   AfterInstall:
     - location: script/startserver.sh
-      timeout: 3600
+      timeout: 300
       runas: root  
+  ValidateService:
+    - location: script/validate.sh
+      timeout: 100
+      runas: root
    
     
     
