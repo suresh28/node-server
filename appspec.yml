@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /opt/aws/nodeApp/
+
+hooks:  
+  AfterInstall:
+    - location: script/startserver.sh
+      timeout: 3600
+      runas: root  
+   
+    
+    
